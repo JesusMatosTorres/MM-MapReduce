@@ -7,14 +7,12 @@ public class MatrixElement {
     private int col;
     private int value;
     private int numCols;
-    private int[][] matrix;
 
     public MatrixElement(int row, int col, int value, int numCols) {
         this.row = row;
         this.col = col;
         this.value = value;
         this.numCols = numCols;
-        this.matrix = new int[row][col];
     }
 
     public int getRow() {
@@ -25,8 +23,8 @@ public class MatrixElement {
         return col;
     }
 
-    public int getValue(int row, int col) {
-        return matrix[row][col];
+    public int getValue() {
+        return value;
     }
 
     public int getNumCols() {
